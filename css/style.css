@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url("../img/background1.png") no-repeat top center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  color:gray;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.light {
+  font-weight: 200;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.profile {
+  max-width: 452px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.box {
+  background: #eee;
+  padding: 3rem;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+
+.profile-pic {
+  border-radius: 50%;
+  width: 200px;
+  margin: 0 auto 2rem auto;
+}
+
+.profile span {
+  font-size: 24px;
+}
+
+.profile p {
+  font-size: 18px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+}
+
+.redes-sociais li {
+  margin-right: 1rem;
+}
+
+.portfolio {
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+.portfolio ul {
+  margin-top: 3rem;
+}
+
+.portfolio li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  gap: 2rem;
+  color: #606060;
+}
+
+.portfolio li + li {
+  margin-top: 2rem;
+}
+
+.portfolio img {
+  border-radius: 10px;
+  width: 300px;
+}
+
+.portfolio h2 {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 16px black;
+  margin-top: 0.3rem;
+  font-size: 16px;
+  padding-bottom: 0.3rem;
+  text-align:center;
+}
+
+.textos {
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-attachment: initial;
+    background-size: contain;
+    background-color:#000011;
+  }
+
+  .box {
+    padding: 1rem;
+    margin-top: 5rem;
+    border-radius: 30px;
+  }
+
+  .box:first-child{
+    padding: 3rem;
+  }
+
+  .portfolio ul {
+    margin-top: 1rem;
+  }
+  .portfolio li {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  
+  .portifolio li div {
+    max-width: 448px;
+    }
+  .copyright {
+      margin: 0;
+      padding: 0.3rem 0;
+      font-size: 15px;
+  }
+
+  .titulos {
+    text-align: center;
+    font-size:22px;
+  }
+
+  .textos {
+    font-size: 14px;
+    padding: 4rem;
+    text-align: center;
+  }
+
+  
+}
