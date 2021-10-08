@@ -103,7 +103,7 @@ body {
 
 .portfolio img {
   border-radius: 10px;
-  box-shadow: 2px 2px 140px #000039;
+  box-shadow: 2px 2px 140px darkblue;
   width: 300px;
 }
 
