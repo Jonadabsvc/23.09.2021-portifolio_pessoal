@@ -136,7 +136,7 @@ body {
   transition: all ease-in-out 0.4s;
   border-style:solid;
   border-width: 1px;
-  box-shadow: 2px 2px 16px #000041;
+  box-shadow: 2px 2px 16px blue;
   border-color: #000042;
 }
 
