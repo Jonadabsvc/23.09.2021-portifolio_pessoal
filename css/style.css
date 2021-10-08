@@ -162,7 +162,7 @@ body {
 
 .botao-projeto a:hover {
   text-decoration: none;
-  color: #000042;
+  color: lightgray;
   transition: all ease-in-out 0.4s;
 }
 
