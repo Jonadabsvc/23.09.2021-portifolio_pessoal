@@ -7,17 +7,19 @@
 img {
   display: block;
   max-width: 100%;
-  box-shadow: 2px 2px 200px darkblue;
 }
 
 li {
   list-style: none;
 }
 
+.sessao {
+  transition: all ease-in-out 0.4s;
 
+}
 body {
   font-family: 'Poppins', sans-serif;
-  background: url("../img/background1.png") no-repeat top center;
+  background-color: #000018;
   background-attachment: fixed;
   background-size: cover;
   display: grid;
@@ -53,6 +55,30 @@ body {
   border-radius: 30px;
   text-align: center;
   margin-top: 8rem;
+}
+
+.botao-descer {
+  position:absolute;
+  margin-top:40rem;
+  border-radius: 30px;
+  width: 40px;
+  height: 80px;
+  color: white;
+  text-align: center;
+  border-style:none;
+  transition: all ease-in-out 0.4s;
+}
+
+.botao-descer:hover {
+  position:absolute;
+  margin-top:40rem;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  color: gray;
+  border-style:none;
+  transition: all ease-in-out 0.4s;
+  cursor:pointer;
 }
 
 
