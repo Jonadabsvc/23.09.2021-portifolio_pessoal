@@ -199,6 +199,15 @@ body {
   width: 1450px;
 }
 
+#btn-topo {
+  margin-right: 1300px;
+  margin-top:37rem; 
+  float:right; 
+  width:25px; 
+  position:fixed; 
+ -webkit-tap-highlight-color: transparent;
+}
+
 
 @media (max-width: 700px) {
   body {
@@ -248,5 +257,14 @@ body {
     text-align: center;
   }
 
+  #btn-topo {
+    margin-right: 300px; 
+    margin-top:37rem; 
+    float:right; 
+    width:25px; 
+    position:fixed; 
+    -webkit-tap-highlight-color: transparent;
+  }
   
 }
+
