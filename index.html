@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
+    <section id="topo"></section>
     <!--<img class="header-top" src="img/juli juli.png"></img>-->
     <img class="header-top" src="img/portifolio-reponsivo.png"></img>
-    <a style="width: 30px; position: absolute; list-style: none;  -webkit-tap-highlight-color: transparent;" href="#card" class="botao-descer"><img src="img/unnamed.gif"></img></a>
+    <a style="width: 30px; align-items:center; -webkit-tap-highlight-color: transparent;" href="#card" class="botao-descer"><img src="img/down.gif"></img></a>
+    <a style="margin-right: 300px; margin-top:40rem; float:right; width:30px; 300px;position:fixed; -webkit-tap-highlight-color: transparent;" href="#topo" class="newsletter"><img src="img/top.gif"></img></a>
+    
 <section name="card" class="scrollSuave" id="card">
   <div class="container">
     <div class="profile box" style="background: linear-gradient(to bottom, #000024 0%, black 100%);">
@@ -77,7 +80,19 @@ var $doc = $('html, body');
 $('a').click(function() {
     $doc.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
+    }, 700);
     return false;
 });
+</script>
+
+<script type="text/javascript">
+  $(function () {
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 300) {
+              $('.newsletter').fadeIn();
+          } else {
+              $('.newsletter').fadeOut();
+          }
+      });
+  });
 </script>
