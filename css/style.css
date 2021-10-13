@@ -155,7 +155,7 @@ body {
 
 .botao-projeto {
   border-radius: 30px;
-  background: linear-gradient(to bottom, black -9%, #000040 100%);
+  background: linear-gradient(to bottom, black -9%, #000058 100%);
   text-align: center;
   width: 100px;
   height: 23px;
@@ -170,7 +170,7 @@ body {
 
 .botao-projeto:hover {
   border-radius: 30px;
-  background: linear-gradient(to bottom, #000042 0%, #000000 124%);
+  background: linear-gradient(to bottom, #000058 0%, #000000 124%);
   text-align: center;
   width: 100px;
   height: 23px;
