@@ -10,8 +10,8 @@
   <body>
     <!--<img class="header-top" src="img/juli juli.png"></img>-->
     <img class="header-top" src="img/portifolio-reponsivo.png"></img>
-    <!--<a style="float:right;" href="#card" class="botao-descer"><i class="fad fa-chevron-double-down"></i></a>-->
-<section name="card" class="sessao" id="card">
+    <a style="width: 30px; position: absolute;" href="#card" class="botao-descer"><img src="img/unnamed.gif"></img></a>
+<section name="card" class="scrollSuave" id="card">
   <div class="container">
     <div class="profile box" style="background: linear-gradient(to bottom, #000024 0%, black 100%);">
       <a style="float:left; color:gray; text-decoration: none; font-size:15px;" target="_blank" href="https://github.com/julimar155"><i class="fab fa-github"></i> Github</a><a style="float:right; color:gray; text-decoration: none; font-size:15px;" target="_blank" href="https://www.canva.com/design/DAEOwonUxOI/Jl6o7EojKgB6LCX_3OmK1w/edit"><i class="fas fa-paperclip"></i> Curriculo</a><br><br>
@@ -67,3 +67,17 @@
 </html>
 
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<!--scroll-suave-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+<script>
+var $doc = $('html, body');
+$('a').click(function() {
+    $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+</script>
