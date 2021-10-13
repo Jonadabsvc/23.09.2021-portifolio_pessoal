@@ -13,9 +13,9 @@ li {
   list-style: none;
 }
 
-.sessao {
+.sessao section {
   transition: all ease-in-out 0.4s;
-
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Poppins', sans-serif;
