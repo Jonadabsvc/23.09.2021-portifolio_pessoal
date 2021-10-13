@@ -19,7 +19,7 @@ li {
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #000018;
+  background: linear-gradient(to bottom, black -9%, #000040 100%);
   background-attachment: fixed;
   background-size: cover;
   display: grid;
