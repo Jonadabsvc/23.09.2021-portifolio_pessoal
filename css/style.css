@@ -195,13 +195,21 @@ body {
   transition: all ease-in-out 0.4s;
 }
 
+.header-top {
+  width: 1400px;
+}
+
+
 @media (max-width: 700px) {
   body {
-    background-attachment: initial;
+    background-attachment: absolute;
     background-size: contain;
     background-color:#000011;
   }
 
+  .header-top {
+    width: 800px;
+  }
   .box {
     padding: 1rem;
     margin-top: 5rem;
