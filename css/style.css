@@ -265,14 +265,7 @@ body {
     text-align: center;
   }
 
-  #btn-topo {
-    margin-right: 380px; 
-    margin-top:36rem; 
-    float:right; 
-    width:25px; 
-    position:fixed; 
-    -webkit-tap-highlight-color: transparent;
-  }
+  
   
 }
 
