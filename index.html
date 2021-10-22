@@ -9,11 +9,20 @@
     
   </head>
   <body>
+    <!--preloader-->
+
+    <div id="preloader">
+      <div class="inner">
+        <img src="img/833.gif">
+      </div>
+    </div>
+
     <section id="topo"></section>
     <!--<img class="header-top" src="img/juli juli.png"></img>-->
     <picture>
-    <source media="(max-width:700px)" srcset="img/portifolio-reponsivo.png">
-    <source class="header-top" media="(min-width:1200px)" srcset="img/juli juli.png">
+    <source data-anime="left" media="(max-width:700px)" srcset="img/portifolio-reponsivo.png">
+    <source data-anime="right" media="(min-width:1500px)" srcset="img/juli juli.png">
+    <source data-anime="right" media="(min-width:1920px)" srcset="img/1920.png">
     <img src="img/juli juli.png" class="header-top">
     </picture>
     <a style="width: 30px; align-items:center; -webkit-tap-highlight-color: transparent;" href="#card" class="botao-descer"><img src="img/down.gif"></img></a>
@@ -79,6 +88,10 @@
 <!--scroll-suave-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+<!--preloader-->
+
+<script src="preloader.js"></script>
 
 
 

@@ -204,7 +204,7 @@ body {
 }
 
 .header-top {
-  width: 1450px;
+  width: 1500px;
 }
 
 #btn-topo {
@@ -264,7 +264,6 @@ body {
     padding: 4rem;
     text-align: center;
   }
-
   
   
 }
@@ -277,22 +276,40 @@ body {
 }
 
 [data-anime="left"] {
-  transform: translate3d(-100px, 0, 0);
+  transform: translate3d(-50px, 0, 0);
 }
 
 [data-anime="right"] {
-  transform: translate3d(100px, 0, 0);
+  transform: translate3d(50px, 0, 0);
 }
 
 [data-anime="top"] {
-  transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -50px, 0);
 }
 
 [data-anime="bellow"] {
-  transform: translate3d(0, 100px, 0);
+  transform: translate3d(0, 50px, 0);
 }
 
 [data-anime].animate {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
 }
+
+/*preloader*/
+#preloader {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000066;
+  z-index:999;
+  }
+          
+#preloader .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
