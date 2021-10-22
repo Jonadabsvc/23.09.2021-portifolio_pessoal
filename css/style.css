@@ -26,7 +26,7 @@ body {
   align-items: center;
   justify-items: center;
   height: 100vh;
-  color:gray;
+  color:lightgray;
 }
 
 .container {
@@ -86,6 +86,17 @@ body {
   border-radius: 50%;
   width: 200px;
   margin: 0 auto 2rem auto;
+  transition:all ease-in-out 0.6s;
+  cursor:zoom-in;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.profile-pic:hover {
+  border-radius: 10%;
+  width: 300px;
+  margin: 0 auto 2rem auto;
+  transition:all ease-in-out 0.6s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .profile span {
@@ -99,6 +110,12 @@ body {
 }
 
 .redes-sociais {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.redes-sociais:hover {
   display: flex;
   justify-content: center;
 }
@@ -155,13 +172,13 @@ body {
 
 .botao-projeto {
   border-radius: 30px;
-  background: linear-gradient(to bottom, black -9%, #000058 100%);
+  background: linear-gradient(to left, #000000 -2%, #000066 100%);
   text-align: center;
   width: 100px;
   height: 23px;
   margin-right: auto;
   margin-left:auto;
-  transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.6s;
   border-style:solid;
   border-width: 1px;
   box-shadow: 2px 2px 16px blue;
@@ -170,13 +187,14 @@ body {
 
 .botao-projeto:hover {
   border-radius: 30px;
-  background: linear-gradient(to bottom, #000058 0%, #000000 124%);
+  background: linear-gradient(to left, #000000 -2%, #000066 100%);
   text-align: center;
   width: 100px;
   height: 23px;
   margin-right: auto;
   margin-left:auto;
-  transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.6s;
+  box-shadow: 2px 2px 16px black;
   border-style:solid;
   border-width: 1px;
   border-color:#000042;
