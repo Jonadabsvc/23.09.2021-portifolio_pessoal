@@ -77,6 +77,7 @@ body {
   transition:all ease-in-out 0.6s;
   cursor:zoom-in;
   -webkit-tap-highlight-color: transparent;
+  filter:saturate(60%);
 }
 
 .profile-pic:hover {
@@ -85,6 +86,7 @@ body {
   margin: 0 auto 2rem auto;
   transition:all ease-in-out 0.6s;
   -webkit-tap-highlight-color: transparent;
+  filter:saturate(100%);
 }
 
 .profile span {
@@ -216,6 +218,82 @@ body {
  -webkit-tap-highlight-color: transparent;
 }
 
+/* Animação */
+
+[data-anime] {
+  opacity: 0;
+  transition: .6s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-150px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="top"] {
+  transform: translate3d(0, -150px, 0);
+}
+
+[data-anime="bellow"] {
+  transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/*preloader*/
+#preloader {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000066;
+  z-index:999;
+  }
+          
+#preloader .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+/*versão para telas 1920px*/
+
+@media (min-width:1920px) {
+  .header-top {
+    width: 2500px;
+  }
+  
+  .botao-descer {
+    position:absolute;
+    margin-top:60rem;
+    border-radius: 30px;
+    width: 40px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    border-style:none;
+    transition: all ease-in-out 0.4s;
+  }
+  #btn-topo {
+    margin-right: 120rem;
+    margin-top:57rem; 
+    width:25px; 
+    position:fixed; 
+   -webkit-tap-highlight-color: transparent;
+  }
+
+}
+
+/* versão para telas mobile */
+
 
 @media (max-width: 700px) {
   body {
@@ -268,48 +346,3 @@ body {
   
 }
 
-/* Animação */
-
-[data-anime] {
-  opacity: 0;
-  transition: .6s;
-}
-
-[data-anime="left"] {
-  transform: translate3d(-150px, 0, 0);
-}
-
-[data-anime="right"] {
-  transform: translate3d(50px, 0, 0);
-}
-
-[data-anime="top"] {
-  transform: translate3d(0, -150px, 0);
-}
-
-[data-anime="bellow"] {
-  transform: translate3d(0, 50px, 0);
-}
-
-[data-anime].animate {
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px);
-}
-
-/*preloader*/
-#preloader {
-  position: fixed;
-  top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000066;
-  z-index:999;
-  }
-          
-#preloader .inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  }
