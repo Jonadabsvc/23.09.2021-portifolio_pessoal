@@ -69,18 +69,6 @@ body {
   transition: all ease-in-out 0.4s;
 }
 
-.botao-descer:hover {
-  position:absolute;
-  margin-top:40rem;
-  border-radius: 30px;
-  width: 40px;
-  height: 40px;
-  color: gray;
-  border-style:none;
-  transition: all ease-in-out 0.4s;
-  cursor:pointer;
-}
-
 
 .profile-pic {
   border-radius: 50%;
@@ -288,3 +276,30 @@ body {
   
 }
 
+/* Animação */
+
+[data-anime] {
+  opacity: 0;
+  transition: .6s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(100px, 0, 0);
+}
+
+[data-anime="top"] {
+  transform: translate3d(0, -100px, 0);
+}
+
+[data-anime="bellow"] {
+  transform: translate3d(0, 100px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
