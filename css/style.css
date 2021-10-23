@@ -350,8 +350,12 @@ body {
   }
 
   .wrapper{
-    max-width: 700px;
+    max-width: 300px;
   }
+  .wrapper .card{
+    width: 100%;
+  }
+
   .wrapper .card{
     width: calc(50% - 20px);
     margin-bottom: 20px;
@@ -443,7 +447,7 @@ body {
 }
 
   .wrapper{
-    max-width: 500px;
+    max-width: 400px;
   }
   .wrapper .card{
     width: 100%;
