@@ -342,7 +342,104 @@ body {
     padding: 4rem;
     text-align: center;
   }
+
+  .wrapper{
+    max-width: 700px;
+  }
+  .wrapper .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
   
+  .botao-descer {
+    position:absolute;
+    margin-top:65rem;
+    margin-left:7rem;
+    border-radius: 30px;
+    width: 50px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    border-style:none;
+    transition: all ease-in-out 0.4s;
+  }
   
 }
+
+
+/*skills*/
+
+.wrapper{
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .card{
+  background: linear-gradient(to left, #000000 -2%, #000066 100%);
+  width: calc(33% - 20px);
+  height: 300px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.wrapper .card .circle{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+}
+.card .circle .too,
+.card .circle .too span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.card .circle .too{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to left, #000000 -2%, #000066 100%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.6s;
+}
+.card .circle:hover .too{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .too span,
+.wrapper .card .text{
+  background: lightgray;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.circle .too span{
+  font-size: 38px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.card .circle:hover .too span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.card .text{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.skills {
+  text-align:center;
+}
+
+  .wrapper{
+    max-width: 500px;
+  }
+  .wrapper .card{
+    width: 100%;
+  }
 
