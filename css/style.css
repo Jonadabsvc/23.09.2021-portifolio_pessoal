@@ -302,6 +302,12 @@ body {
     background-color:#000011;
   }
 
+  .profile {
+    max-width: 410px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  
   .header-top {
     width: 800px;
   }
