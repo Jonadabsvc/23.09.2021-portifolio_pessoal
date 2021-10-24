@@ -359,13 +359,13 @@ body {
 .wrapper .card{
   background: linear-gradient(to left, #000000 -2%, #000066 100%);
   width: calc(33% - 20px);
-  height: 300px;
+  height: 400px;
   border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 15px #000030;
 }
 .wrapper .card .circle{
   position: relative;
@@ -374,6 +374,11 @@ body {
   border-radius: 50%;
   cursor: default;
 }
+
+.circle {
+  margin-top: 20px;
+}
+
 .card .circle .too,
 .card .circle .too span{
   position: absolute;
@@ -410,6 +415,20 @@ body {
 .card .text{
   font-size: 20px;
   font-weight: 600;
+  margin-left: 10px;
+  margin-right:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.prgf {
+  font-size:12px;
+  font-weight:200;
+  text-align: center;
+  margin-left: 3rem;
+  margin-right:3rem;
+  margin-top:10px;
+  margin-bottom:10px;
 }
 
 .skills {
