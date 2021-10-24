@@ -199,7 +199,7 @@ body {
   color: white;
   text-shadow: 2px 2px 16px black;
   margin-top: 0.3rem;
-  font-size: 16px;
+  font-size: 12px;
   padding-bottom: 0.3rem;
   text-align:center;
 }
@@ -448,7 +448,7 @@ body {
   .copyright {
       margin: 0;
       padding: 0.3rem 0;
-      font-size: 15px;
+      font-size: 8px;
   }
 
   .titulos {
