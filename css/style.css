@@ -465,6 +465,7 @@ body {
   #btn-topo {
     margin-right: 350px;
     margin-top:45rem;
+    opacity: 60%;
     z-index: 4; 
     float:right; 
     width:25px; 
