@@ -126,7 +126,7 @@ body {
 }
 
   .icone-face:hover {
-    color: #3b5998;
+    opacity: 60%;
     transition:all ease-in-out 0.4s;
     font-size: 45px;
   }
@@ -136,7 +136,7 @@ body {
   transition:all ease-in-out 0.4s;
 }
   .icone-insta:hover {
-  color:purple;
+  opacity: 60%;
   transition:all ease-in-out 0.4s;
   font-size: 45px;
   }
@@ -147,7 +147,7 @@ body {
 }
 
   .icone-whatsapp:hover {
-    color:#34af23;
+    opacity: 60%;
     transition:all ease-in-out 0.4s;
     font-size: 45px;
   }
@@ -157,7 +157,7 @@ body {
   transition:all ease-in-out 0.4s;
 }
   .icone-linkedin:hover {
-    color:#007bb6;
+    opacity: 60%;
     transition:all ease-in-out 0.4s;
     font-size: 45px;
   }
@@ -461,7 +461,19 @@ body {
     padding: 4rem;
     text-align: center;
   }
-  
+
+  .botao-descer {
+    position:absolute;
+    margin-top:40rem;
+    border-radius: 30px;
+    width: 40px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    z-index: 999;
+    border-style:none;
+    transition: all ease-in-out 0.4s;
+  }
   
 }
 
@@ -561,6 +573,7 @@ body {
   .wrapper .card{
     width: calc(50% - 20px);
     margin-bottom: 20px;
+    margin-left:8rem;
   }
 }
 @media(max-width: 505px){
@@ -569,6 +582,7 @@ body {
   }
   .wrapper .card{
     width: 100%;
+    margin-left:8rem;
   }
 }
 
