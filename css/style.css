@@ -573,14 +573,17 @@ body {
   .wrapper .card{
     width: calc(50% - 20px);
     margin-bottom: 20px;
+    margin-left:1rem;
   }
 }
 @media(max-width: 505px){
   .wrapper{
     max-width: 400px;
+    
   }
   .wrapper .card{
     width: 100%;
+    margin-left:1rem;
   }
 }
 
